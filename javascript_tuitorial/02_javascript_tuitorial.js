@@ -1,6 +1,6 @@
 // conditional expression
 
-console.log("conditional expression")
+console.log("conditional expression");
 
 // let a = prompt("Hey! whats your age?");
 // console.log(a)
