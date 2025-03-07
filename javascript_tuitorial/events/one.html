@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2> Image </h2>
+    <div>
+        <ul id="images">
+            <li><img width="100px" id="photoshop" src="pexels-hannah-luo-225422257-18540205.jpg" alt="Photo"></li>
+            <li><img width="100px" id="pan" src="pexels-andrey-grushnikov-223358-707668.jpg" alt="Photo"></li>
+            <li><img width="100px" id="sea" src="pexels-alexander-liedtke-873657437-29697992.jpg" alt="Photo"></li>
+            <li><img width="100px" id="flower" src="pexels-markus-winkler-1430818-4836103.jpg" alt="Photo" onclick="alert('flower')"></li>
+            <li><img width="100px" id="peace" src="pexels-mesut-yalcin-1233429888-29792186.jpg" alt="Photo"></li>
+            <li> <a style="color: aliceblue;" href="https://www.google.com/" id="google">Google</a> </li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('sea').onclick = function(){
+    //     alert("sea clicked");
+    // }
+
+    document.getElementById('images').addEventListener('click', function(e){
+        // alert("sea clicked again");
+        // console.log(e)
+        console.log('click inside the ul')
+    }, false) //bubble events - false, capturing - true
+
+    document.getElementById('pan').addEventListener('click', function(e){
+        console.log("click on the pan")
+        e.stopPropagation()
+    }, false)
+    //type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget,
+    //clientX, clientY, screenX, screenY
+    //altkey, ctrl key, shift key, keycode
+
+
+
+    //attechEvent()
+    //jQuery - on
+</script>
+</html>

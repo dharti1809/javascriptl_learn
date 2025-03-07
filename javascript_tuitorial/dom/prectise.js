@@ -62,3 +62,8 @@
 //     h.style.padding = "15px";
 //     h.innerText = "dharti"
 // })
+
+// document.querySelectorAll('li')
+// lis.forEach(function (lil) {
+//     console.log(lil)
+// })
