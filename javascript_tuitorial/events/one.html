@@ -23,24 +23,40 @@
     //     alert("sea clicked");
     // }
 
-    document.getElementById('images').addEventListener('click', function(e){
-        // alert("sea clicked again");
-        // console.log(e)
-        console.log('click inside the ul')
-    }, false) //bubble events - false, capturing - true
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     // alert("sea clicked again");
+    //     // console.log(e)
+    //     console.log('click inside the ul')
+    // }, false) //bubble events - false, capturing - true
 
-    document.getElementById('pan').addEventListener('click', function(e){
-        console.log("click on the pan")
-        e.stopPropagation()
-    }, false)
+    // document.getElementById('pan').addEventListener('click', function(e){
+    //     console.log("click on the pan")
+    //     e.stopPropagation()
+    // }, false)
+
     //type, timestamp, defaultPrevented
     //target, toElement, srcElement, currentTarget,
     //clientX, clientY, screenX, screenY
     //altkey, ctrl key, shift key, keycode
 
-
-
     //attechEvent()
     //jQuery - on
+
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     console.log("google clicked");
+    // }, false)
+
+    document.querySelector("#images").addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName)
+        let removes = e.target.parentNode;
+        // removes.remove()
+        if(e.target.tagName === 'IMG'){
+            removes.parentNode.removeChild(removes)
+        }
+        // removes.parentNode.removeChild(removes)
+    },false)
 </script>
 </html>
