@@ -28,7 +28,7 @@ i = "add new";
 	let f = "hello";
 	console.log(f);
 }
-console.log(i)
+console.log(h)
 
 console.log("primitive data types");
 
