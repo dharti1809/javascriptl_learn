@@ -37,11 +37,11 @@
 // }
 
 // do while loop
-let n = prompt("enter the value of n");
-n = Number.parseInt(n)
+// let n = prompt("enter the value of n");
+// n = Number.parseInt(n)
 
-let i = 1;
-do{
-	console.log(i)
-	i++;
-}while(i< n)
+// let i = 1;
+// do{
+// 	console.log(i)
+// 	i++;
+// }while(i< n)
