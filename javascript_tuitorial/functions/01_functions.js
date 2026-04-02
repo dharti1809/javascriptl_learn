@@ -1,16 +1,16 @@
-function avgTwoNum(x,y){
-	console.log("done");
-	// return 1 + (x+y)/2;
-	return Math.round(1+ (x + y)/2)
-}
+// function avgTwoNum(x,y){
+// 	console.log("done");
+// 	// return 1 + (x+y)/2;
+// 	return Math.round(1+ (x + y)/2)
+// }
 
-let a = 1;
-let b = 2;
-let c = 3;
+// let a = 1;
+// let b = 2;
+// let c = 3;
 
-console.log("average of a and b is", avgTwoNum(a,b));
-console.log("average of a and b is", avgTwoNum(b,c));
-console.log("average of a and b is", avgTwoNum(c,a));
+// console.log("average of a and b is", avgTwoNum(a,b));
+// console.log("average of b and c is", avgTwoNum(b,c));
+// console.log("average of c and a is", avgTwoNum(c,a));
 
 // console.log("average of b and c is", 1 + (b+c)/2);
 // console.log("average of a and c is", 1 + (a+c)/2);
@@ -18,11 +18,11 @@ console.log("average of a and b is", avgTwoNum(c,a));
 
 // Arrow function
 
-const sum = (p,q) =>{
-	return p+q;
-}
+// const sum = (p,q) =>{
+// 	return p+q;
+// }
 
-console.log(sum(5,7));
+// console.log(sum(5,7));
 
 // const hello = () =>{
 // 	console.log("hello, how are you!!!");
